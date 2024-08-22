@@ -67,6 +67,8 @@ nav ul li a:hover {
 /*recursos*/
 
 .col-md-4 img {
+    margin-left: 5%;
+    margin-right: 5%;
     max-width: 90%;
     height: auto;
   }

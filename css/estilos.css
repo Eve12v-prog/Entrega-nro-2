@@ -1,3 +1,104 @@
+body, h1, h2, h3, p, ul, ol, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 
+footer {
+  background-color: hsl(346, 100%, 82%);
+  padding: 20px 0;
+  text-align: center;
+  display: flex;
+  /*<div class="row">
+      <div class="col-md-4 footer-col">*/
+}
+footer .redes-sociales img {
+  width: 20px;
+  height: 20px;
+}
+footer div col-md-4 footer-col h5 {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: aqua;
+}
+
+header.unico div {
+  text-align: center;
+}
+header.unico div a img {
+  height: 30vh;
+  height: 30vh;
+}
+header.unico nav {
+  text-align: center;
+}
+header.unico nav ul li {
+  display: inline-block;
+}
+header.unico nav ul li a {
+  color: #FC3C80;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+  background-color: #F7D6D0;
+}
+header.unico nav ul li :hover {
+  background-color: #821D30;
+}
+
+/*nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #FC3C80;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #F7D6D0;
+}
+
+*/
+.hero {
+  background-image: url("../img/fondo_inicio.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 0;
+}
+.hero p {
+  font-size: 24px;
+  font-weight: bold;
+  width: 400px;
+  height: 100px;
+  background-position: center;
+}
+.hero img {
+  width: 300px;
+  margin-top: 20px;
+}
+.hero .hero-image {
+  margin-top: -150px;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.6;
+  background-color: #FFA3B8;
+  margin: 0;
+  padding: 0;
+  color: #FC3C80;
+}
 
 /*# sourceMappingURL=estilos.css.map */
