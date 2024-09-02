@@ -4,6 +4,15 @@ body, h1, h2, h3, p, ul, ol, li {
   border: 0;
 }
 
+body {
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.6;
+  background-color: #FFA3B8;
+  margin: 0;
+  padding: 0;
+  color: #FC3C80;
+}
+
 footer {
   background-color: hsl(346, 100%, 82%);
   padding: 20px 0;
@@ -16,7 +25,7 @@ footer .redes-sociales img {
   width: 20px;
   height: 20px;
 }
-footer div col-md-4 footer-col h5 {
+footer div .footer-col h5 {
   font-size: 24px;
   font-weight: bold;
   background-color: aqua;
@@ -32,6 +41,10 @@ header.unico div a img {
 header.unico nav {
   text-align: center;
 }
+header.unico nav ul {
+  display: flex;
+  column-gap: 10px;
+}
 header.unico nav ul li {
   display: inline-block;
 }
@@ -43,7 +56,7 @@ header.unico nav ul li a {
   transition: all 0.3s ease;
   background-color: #F7D6D0;
 }
-header.unico nav ul li :hover {
+header.unico nav ul li:hover {
   background-color: #821D30;
 }
 
@@ -91,14 +104,28 @@ nav ul li a:hover {
 .hero .hero-image {
   margin-top: -150px;
 }
+.hero .hero-content {
+  justify-content: center;
+  display: flex !important;
+}
 
-body {
-  font-family: "DM Sans", sans-serif;
-  line-height: 1.6;
-  background-color: #FFA3B8;
-  margin: 0;
-  padding: 0;
-  color: #FC3C80;
+/*
+@media only screen and (max-width 500px) {
+
+}
+
+@media only screen (min-width 501px) and (max-width 960px) {
+
+}
+
+@media only screen and (min-width 961px) {
+
+}
+*/
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
