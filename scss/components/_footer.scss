@@ -1,29 +1,28 @@
-
-
 footer {
     background-color: hsl(346, 100%, 82%);
-    padding: 20px 0;
+    padding: 20px 0 20px 0;
     text-align: center;
     display: flex;
-    
-    .redes-sociales img {
-        width: 20px;
-        height: 20px;
-    }
-    
-    div {
-        .footer-col {
-            h5{
-                font-size: 24px;
-                font-weight: bold;
-                background-color: aqua;    
+    .container {
+        .row{
+            .footer-col{
+                h5 {
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+                form{
+                    .btn-suscripcion{
+                        background-color: $footer-background;
+                    }
+                }
+            }
+            
         }
     }
-   
 
-   }
-            /*<div class="row">
-                <div class="col-md-4 footer-col">*/
+    .redes-sociales img {
+        @extend %iconos-redes;
+        margin-bottom: 2vh;
+    }
 }
-
 

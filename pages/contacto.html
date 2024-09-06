@@ -1,114 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <link rel="stylesheet" href="../css/style.css">
-    
+    <link rel="stylesheet" href="../css/estilos.css">
+
 </head>
+
 <body>
 
-    <header>
+    <header class="unico">
         <div class="logo">
-            <a href="../index.html">
-                <img src="../img/logo_freia.png" alt="Logo de tu Sitio Web">
+            <a href="index.html">
+                <img src="../img/Logo_Freia.png" alt="Logo de tu Sitio Web">
             </a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="sobremi.html">Sobre mi</a></li>
-                <li><a href="recursos.html">Recursos</a></li>
-                <li><a href="ebook.html">Ebook</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <!-- Burger Menu for Small Screens -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/sobremi.html">Sobre mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/recursos.html">Recursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/ebook.html">Ebook</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <main>
-        <div class="row col-12 justify-content-center">
-            <div class="col-7">
+        <div class="contact">
+            <div class="img-background-contact">
                 <img class="container-contacto-imagen" src="../img/contacto-imagen.png" alt="Imagen">
             </div>
-            <div class="col-7 grid-container">
-                <div class="grid-item texto">
-                    <p class="texto1"><strong>
-                        <h4>
-                            Llamada de valoración gratuita </strong>
-                        </h4>
-                        <h5>
-                            Agenda una llamada de valoración a través de los siguientes medios:
-                            <br> 
-                        </p> 
-                        <p class="texto2"> <strong>  Teléfono:</strong> +4796828978 
-                            <br>
-                            <strong> Correo electrónico:</strong> evelyndocevecoach@gmail.com
-                        </h5>
-                    </p>
-                </div>    
-                <div class="grid-item imagen">
-                    <p><strong> Deja tu comentario o pregúntame tus dudas:</strong></p>
-                    <div class="formulario-contacto">
-                        <form action="#" method="post">
-                            <div class="campo">
-                                <label for="nombre">Nombre:</label>
-                                <input type="text" id="nombre" name="nombre" required>
+            <div class="contact-suscription">
+                <div class="grid-container">
+                    <div class="grid-item-phone">
+                        <div class="mt-5 col-md-6">
+                            <h4 class=" text-center mb-4"><strong>Deja tu comentario o
+                                       pregúntame tus dudas:</strong></h4>
+                                  
+                            <div class="mb-3 text-center">
+                                <label for="nombre" class="form-label"><strong>Teléfono:</strong> +4796828978</label>    
                             </div>
-                            <div class="campo">
-                                <label for="correo">Correo electrónico:</label>
-                                <input type="email" id="correo" name="correo" required>
-                            </div>
-                            <div class="campo">
-                                <label for="comentario">Comentario:</label>
-                                <textarea id="comentario" name="comentario" rows="4" required></textarea>
-                            </div>
-                            <button type="submit">Enviar</button>
-                        </form>
+                            <div class="mb-3 text-center">
+                                <label for="nombre" class="form-label"><strong>Email:</strong> evelyndocevecoach@gmail.com</label>    
+                            </div>   
+                        </div> 
+                    </div>
+                    <div class="grid-item-suscription">
+                             <div class="grid-item-user-info mt-5">
+                                <div class="col-md-6">
+                                    <h4 class=" text-center mb-4"><strong>Deja tu comentario o
+                                        pregúntame tus dudas:</strong></h4>
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="nombre" class="form-label">Nombre:</label>
+                                            <input type="text" class="form-control" id="nombre" name="nombre"
+                                            placeholder="Escribe tu nombre" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="correo" class="form-label">Correo electrónico:</label>
+                                            <input type="email" class="form-control" id="correo" name="correo"
+                                            placeholder="Escribe tu correo" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="comentario" class="form-label">Comentario:</label>
+                                            <textarea class="form-control" id="comentario" name="comentario" rows="4"
+                                            placeholder="Escribe tu comentario" required></textarea>
+                                        </div>
+                                        <button type="submit" class="enviar col-12">Enviar</button>
+                                    </form>
+                                </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>    
+        </div>
         
-        
-        <!--<section class="contacto">
-
-            <div class="agenda-sesion">
-                <h3><strong>Llamada de valoración gratuita</h3></strong>
-                <p>Agenda una llamada de valoración a través de los siguientes medios:</p>
-            </div>
-
-            <div class="info-contacto">
-                <p><strong>Teléfono:</strong> +4796828978</p>
-                <p><strong>Correo electrónico:</strong> evelyndocevecoach@gmail.com</p>
-            </div>
-
-<p><strong> Deja tu comentario o pregúntame tus dudas:</strong></p>
-
-            <div class="formulario-contacto">
-                
-                <form action="#" method="post">
-                    <div class="campo">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" required>
-                    </div>
-                    <div class="campo">
-                        <label for="correo">Correo electrónico:</label>
-                        <input type="email" id="correo" name="correo" required>
-                    </div>
-                    <div class="campo">
-                        <label for="comentario">Comentario:</label>
-                        <textarea id="comentario" name="comentario" rows="4" required></textarea>
-                    </div>
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
-        </section>-->
     </main>
 
     <footer>
@@ -116,11 +108,15 @@
             <div class="row">
                 <div class="col-md-4 footer-col">
                     <div class="redes-sociales">
-                    <h5>Redes Sociales</h5>
-                        <a href="https://www.instagram.com/evelyn_freia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="../img/instagram.png" alt="Instagram"></a>
-                        <a href="https://www.tiktok.com/@evelyn_freia?_t=8nvEsqlCpqH&_r=1"><img src="../img/tiktok.png" alt="Tik Tok"></a>
-                        <a href="https://www.snapchat.com/add/evelyn_freia?share_id=oN_Ho9H_zMg&locale=en-US"><img src="../img/snapchat.png" alt="Snapchat"></a>
-                </div>
+                        <h5>Redes Sociales</h5>
+                        <a
+                            href="https://www.instagram.com/evelyn_freia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img
+                                src="../img/instagram.png" alt="Instagram"></a>
+                        <a href="https://www.tiktok.com/@evelyn_freia?_t=8nvEsqlCpqH&_r=1"><img src="../img/tiktok.png"
+                                alt="Tik Tok"></a>
+                        <a href="https://www.snapchat.com/add/evelyn_freia?share_id=oN_Ho9H_zMg&locale=en-US"><img
+                                src="../img/snapchat.png" alt="Snapchat"></a>
+                    </div>
                 </div>
                 <div class="col-md-4 footer-col">
                     <h5>Contacto</h5>
@@ -136,18 +132,20 @@
                             <label for="email">Email:</label>
                             <input type="email" class="form-control" id="email" placeholder="Introduce tu email">
                         </div>
-                        <button class="btn-suscripcion" type="submit" class="btn btn-primary">Suscribirse</button>
+                        <button class="btn-suscripcion" type="submit" class="">Suscribirse</button>
                     </form>
                 </div>
             </div>
         </div>
-
-        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-    
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>

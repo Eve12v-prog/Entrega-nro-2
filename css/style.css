@@ -1,5 +1,5 @@
 
-
+/*
 body, h1, h2, h3, p, ul, ol, li {
     margin: 0;
     padding: 0;
@@ -50,7 +50,7 @@ nav ul li a:hover {
 
 
 /*sobre mi*/
-
+/*
 .sobre-mi video {
     margin-top: 75px;
 
@@ -65,7 +65,7 @@ nav ul li a:hover {
 
 
 /*recursos*/
-
+/*
 .col-md-4 img {
     margin-left: 5%;
     margin-right: 5%;
@@ -96,7 +96,7 @@ text-align: center;
 
     /*ebook*/
 
-
+/*
 .descripcion-ebook {
     padding: 20px;
 }
@@ -195,7 +195,7 @@ text-align: center;
 
 
 /* Contacto */
-
+/*
 .contacto {
     text-align: center;
     padding: 50px 0;
@@ -274,7 +274,7 @@ text-align: center;
 
 
 /*Footer*/
-  
+ /* 
 .redes-contacto-suscripcion {
     display: flex;
     justify-content: center; 

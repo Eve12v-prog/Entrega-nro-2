@@ -3,20 +3,17 @@
     background-size: cover;
     background-position: center;
     text-align: center;
-    padding: 100px 0;
-    p {
+    padding: 5vh 5vw;
+    .main-page-text {
         font-size: 24px;    
         font-weight: bold;
         width: 400px;
-        height: 100px;
         background-position: center;
     }
     img {
-        width: 300px; 
-        margin-top: 20px;
+        max-width: 100%; 
     }
     .hero-image {
-        margin-top: -150px; 
     }
     .hero-content {
         justify-content: center;
@@ -24,5 +21,157 @@
     }
 }
 
+/*.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto; 
+    gap: 20px; 
+    background-color: aqua;
+    margin-top: 75px;
+    padding: 20px;
+}
+
+/*
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto; 
+    gap: 20px;
+    background-color: rebeccapurple;
+    margin-top: 75px;
+    padding: 20px; 
+    /* First item: Video container */
+    /*
+    .first-item {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-left: 10%; 
+/*
+        video {
+            width: 80%;
+            max-width: 400px; 
+            height: auto; 
+        }
+    }
+
+    /* Second item: Text container */
+    /*
+    .second-item {
+        margin-right: 10%; 
+        margin-left: 10%; 
+    }
+    /*
+    mi-presentacion p {
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+}
+*/
+
+.recursos {
+    justify-content: center;
+    img {
+        margin: 5% 5% 2% 5%;
+        max-width: 90%;
+        height: auto;
+    }
+    h2 {
+        text-align: center;
+    }
+    .recursos-text{
+        width: min(500px, 90vw);
+    }
+    .descripcion-blog {
+        gap:20px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    h3 {
+        text-align: center;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    a {
+        text-align: left;
+        margin-left: 5%;
+    }
+    margin-bottom: 10%;
+}
 
 
+.ebook{
+    .descripcion-ebook{
+        .grid-container{
+            display: grid;
+            gap: 20px; 
+            grid-template-columns: 1fr 1fr;            
+            .grid-item{
+                .inside-item-container-column{
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    height:100%;
+                }
+                .inside-item-container-row{
+                    display:flex;
+                    flex-direction: row;
+                }
+                .ebook-image-item{
+                    justify-content: flex-start;
+                }
+                .ebook-text-header{
+                    justify-content: flex-end;
+                }
+                .ebook-text-item{
+                    justify-content: flex-end;
+                }
+                .text-next-to-image {
+                    max-width: 50%;
+                    font-size:20px;
+                    text-align: center;
+                }
+                .ebook-img{
+                    max-width: 40%;
+                } 
+            }
+        }  
+    }  
+}  
+
+
+.contact{
+    .img-background-contact{
+        display: flex;
+        justify-content: center;
+        padding: 2vh 2vw;
+    }
+    .contact-suscription{
+        .grid-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            .grid-item-phone{
+                display: flex;
+                justify-content: end;
+
+            }
+                
+            .grid-item-suscription{
+                
+                
+            }
+        }
+    }
+}
+   
+        
+        
+        
+            

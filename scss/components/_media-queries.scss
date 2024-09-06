@@ -13,7 +13,63 @@
 */
 @media (max-width: 768px) {
     .grid-container {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr !important; 
+    }
+    .ebook-img {
+        max-width:100%!important;
+    }
+    .text-next-to-image {
+        max-width:100%!important;
+    }
+    .ebook-text-header{
+        justify-content: center!important;
     }
 }
 
+@media (max-width: 1350px) {
+    .ebook{
+        .grid-container {
+            grid-template-columns: 1fr !important; 
+        }
+        .ebook-img {
+            max-width:80%!important;
+        }
+        .text-next-to-image {
+            max-width:80%!important;
+        }
+        .ebook-text-item{
+            justify-content: center!important;
+        }
+        .ebook-image-item{
+            justify-content: center!important;
+        }
+        .ebook-text-header{
+            justify-content: center!important;
+        }
+    }
+}
+
+@media (max-width: 2000px) {
+    .ebook-img {
+        max-width:60%!important;
+    }
+    .text-next-to-image {
+        max-width:60%!important;
+    }
+}
+
+@media (max-width: 1125px) {
+    .grid-item-phone {
+        display: flex;
+        justify-content: center!important;
+    }
+    .grid-item-suscription {
+        display: flex;
+        justify-content: center!important;
+    }
+    .grid-item-user-info{
+        display: flex;
+        justify-content: center!important;
+
+    }
+}

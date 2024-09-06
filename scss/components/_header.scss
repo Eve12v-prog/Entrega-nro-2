@@ -1,55 +1,84 @@
-header.unico{
+.unico{
     div {
         text-align: center;
         a {
             img { 
-                height: 30vh;  
-                height: 30vh;   
+                height: 15vh;  
+                height: 15vh;   
             } 
         }
     }
+
+#navbarNav {
+    padding: 0;
+    .navbar-nav{
+        .nav-item {
+            .nav-link{
+                background-color: $nav-background;
+                
+            }
+        }
+
+    }
+}
+
+.navbar{
+    justify-content: center;
+    
+    .navbar-toggler{
+        
+        span{
+
+        }
+    }
+}
+
+
+.collapse navbar-collapse{
+   
+    ul{
+        
+        li{
+            
+        }
+            a{
+                
+        }
+            li{
+                
+            }      
+    }
+
+}
+
+    
+      
+
     nav {
-        text-align: center;
         ul {
-            display: flex;
-            column-gap:10px;
+            @include flexbox(center);
+            column-gap:20px;
+           
             li {
                 display: inline-block;
                 a { 
-                    color: #FC3C80;
+                    color: $nav-color;
                     text-decoration: none;
-                    font-weight: bold;
+                    font-weight: bold; 
                     padding: 5px 10px;
                     transition: all 0.3s ease;
-                    background-color:#F7D6D0;
+                    background-color:$nav-background;
+
+                    /*&:hover {
+                        background-color: aqua;
+                    }*/
+                    
                 }
-                &:hover {
+                
+                a:hover {
                     background-color: #821D30;
                 }
             }
         }
     }    
 }
-/*nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #FC3C80;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 10px;
-    transition: all 0.3s ease;
-}
-
-nav ul li a:hover {
-    background-color: #F7D6D0;
-}
-
-*/

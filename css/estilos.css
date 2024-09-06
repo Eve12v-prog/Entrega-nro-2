@@ -4,6 +4,11 @@ body, h1, h2, h3, p, ul, ol, li {
   border: 0;
 }
 
+footer .redes-sociales img {
+  width: 20px;
+  height: 20px;
+}
+
 body {
   font-family: "DM Sans", sans-serif;
   line-height: 1.6;
@@ -15,100 +20,211 @@ body {
 
 footer {
   background-color: hsl(346, 100%, 82%);
-  padding: 20px 0;
+  padding: 20px 0 20px 0;
   text-align: center;
   display: flex;
-  /*<div class="row">
-      <div class="col-md-4 footer-col">*/
 }
-footer .redes-sociales img {
-  width: 20px;
-  height: 20px;
-}
-footer div .footer-col h5 {
+footer .container .row .footer-col h5 {
   font-size: 24px;
   font-weight: bold;
-  background-color: aqua;
+}
+footer .container .row .footer-col form .btn-suscripcion {
+  background-color: #F7D6D0;
+}
+footer .redes-sociales img {
+  margin-bottom: 2vh;
 }
 
-header.unico div {
+.unico div {
   text-align: center;
 }
-header.unico div a img {
-  height: 30vh;
-  height: 30vh;
+.unico div a img {
+  height: 15vh;
+  height: 15vh;
 }
-header.unico nav {
-  text-align: center;
+.unico #navbarNav {
+  padding: 0;
 }
-header.unico nav ul {
+.unico #navbarNav .navbar-nav .nav-item .nav-link {
+  background-color: #F7D6D0;
+}
+.unico .navbar {
+  justify-content: center;
+}
+.unico nav ul {
   display: flex;
-  column-gap: 10px;
+  justify-content: center;
+  column-gap: 20px;
 }
-header.unico nav ul li {
+.unico nav ul li {
   display: inline-block;
 }
-header.unico nav ul li a {
+.unico nav ul li a {
   color: #FC3C80;
   text-decoration: none;
   font-weight: bold;
   padding: 5px 10px;
   transition: all 0.3s ease;
   background-color: #F7D6D0;
+  /*&:hover {
+      background-color: aqua;
+  }*/
 }
-header.unico nav ul li:hover {
+.unico nav ul li a:hover {
   background-color: #821D30;
 }
 
-/*nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #FC3C80;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 10px;
-    transition: all 0.3s ease;
-}
-
-nav ul li a:hover {
-    background-color: #F7D6D0;
-}
-
-*/
 .hero {
   background-image: url("../img/fondo_inicio.jpg");
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding: 100px 0;
+  padding: 5vh 5vw;
 }
-.hero p {
+.hero .main-page-text {
   font-size: 24px;
   font-weight: bold;
   width: 400px;
-  height: 100px;
   background-position: center;
 }
 .hero img {
-  width: 300px;
-  margin-top: 20px;
-}
-.hero .hero-image {
-  margin-top: -150px;
+  max-width: 100%;
 }
 .hero .hero-content {
   justify-content: center;
   display: flex !important;
 }
 
+/*.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto; 
+    gap: 20px; 
+    background-color: aqua;
+    margin-top: 75px;
+    padding: 20px;
+}
+
+/*
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto; 
+    gap: 20px;
+    background-color: rebeccapurple;
+    margin-top: 75px;
+    padding: 20px; 
+    /* First item: Video container */
+/*
+    .first-item {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-left: 10%; 
+/*
+        video {
+            width: 80%;
+            max-width: 400px; 
+            height: auto; 
+        }
+    }
+
+    /* Second item: Text container */
+/*
+    .second-item {
+        margin-right: 10%; 
+        margin-left: 10%; 
+    }
+    /*
+    mi-presentacion p {
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+}
+*/
+.recursos {
+  justify-content: center;
+  margin-bottom: 10%;
+}
+.recursos img {
+  margin: 5% 5% 2% 5%;
+  max-width: 90%;
+  height: auto;
+}
+.recursos h2 {
+  text-align: center;
+}
+.recursos .recursos-text {
+  width: min(500px, 90vw);
+}
+.recursos .descripcion-blog {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.recursos h3 {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.recursos a {
+  text-align: left;
+  margin-left: 5%;
+}
+
+.ebook .descripcion-ebook .grid-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+.ebook .descripcion-ebook .grid-container .grid-item .inside-item-container-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.ebook .descripcion-ebook .grid-container .grid-item .inside-item-container-row {
+  display: flex;
+  flex-direction: row;
+}
+.ebook .descripcion-ebook .grid-container .grid-item .ebook-image-item {
+  justify-content: flex-start;
+}
+.ebook .descripcion-ebook .grid-container .grid-item .ebook-text-header {
+  justify-content: flex-end;
+}
+.ebook .descripcion-ebook .grid-container .grid-item .ebook-text-item {
+  justify-content: flex-end;
+}
+.ebook .descripcion-ebook .grid-container .grid-item .text-next-to-image {
+  max-width: 50%;
+  font-size: 20px;
+  text-align: center;
+}
+.ebook .descripcion-ebook .grid-container .grid-item .ebook-img {
+  max-width: 40%;
+}
+
+.contact .img-background-contact {
+  display: flex;
+  justify-content: center;
+  padding: 2vh 2vw;
+}
+.contact .contact-suscription .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.contact .contact-suscription .grid-container .grid-item-phone {
+  display: flex;
+  justify-content: end;
+}
 /*
 @media only screen and (max-width 500px) {
 
@@ -124,7 +240,58 @@ nav ul li a:hover {
 */
 @media (max-width: 768px) {
   .grid-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
+  }
+  .ebook-img {
+    max-width: 100% !important;
+  }
+  .text-next-to-image {
+    max-width: 100% !important;
+  }
+  .ebook-text-header {
+    justify-content: center !important;
+  }
+}
+@media (max-width: 1350px) {
+  .ebook .grid-container {
+    grid-template-columns: 1fr !important;
+  }
+  .ebook .ebook-img {
+    max-width: 80% !important;
+  }
+  .ebook .text-next-to-image {
+    max-width: 80% !important;
+  }
+  .ebook .ebook-text-item {
+    justify-content: center !important;
+  }
+  .ebook .ebook-image-item {
+    justify-content: center !important;
+  }
+  .ebook .ebook-text-header {
+    justify-content: center !important;
+  }
+}
+@media (max-width: 2000px) {
+  .ebook-img {
+    max-width: 60% !important;
+  }
+  .text-next-to-image {
+    max-width: 60% !important;
+  }
+}
+@media (max-width: 1125px) {
+  .grid-item-phone {
+    display: flex;
+    justify-content: center !important;
+  }
+  .grid-item-suscription {
+    display: flex;
+    justify-content: center !important;
+  }
+  .grid-item-user-info {
+    display: flex;
+    justify-content: center !important;
   }
 }
 
