@@ -1,3 +1,4 @@
+/*Inicio*/
 .hero {
     background-image: url('../img/fondo_inicio.jpg');
     background-size: cover;
@@ -21,57 +22,7 @@
     }
 }
 
-/*.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: auto; 
-    gap: 20px; 
-    background-color: aqua;
-    margin-top: 75px;
-    padding: 20px;
-}
-
-/*
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: auto; 
-    gap: 20px;
-    background-color: rebeccapurple;
-    margin-top: 75px;
-    padding: 20px; 
-    /* First item: Video container */
-    /*
-    .first-item {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        margin-left: 10%; 
-/*
-        video {
-            width: 80%;
-            max-width: 400px; 
-            height: auto; 
-        }
-    }
-
-    /* Second item: Text container */
-    /*
-    .second-item {
-        margin-right: 10%; 
-        margin-left: 10%; 
-    }
-    /*
-    mi-presentacion p {
-        margin-left: 30%;
-        margin-right: 30%;
-        margin-top: 40px;
-        margin-bottom: 100px;
-    }
-}
-*/
-
+/*Sobre mi*/
 
 .sobremi{
     .descripcion-sobremi{
@@ -112,6 +63,7 @@
     }  
 }  
 
+/*Recursos*/
 
 .recursos {
     justify-content: center;
@@ -146,6 +98,7 @@
     margin-bottom: 10%;
 }
 
+/*Ebook*/
 
 .ebook{
     .descripcion-ebook{
@@ -187,6 +140,7 @@
 }  
 
 
+/*Contacto*/
 .contact{
     .img-background-contact{
         display: flex;
@@ -204,12 +158,8 @@
             gap: 20px;
             .grid-item-phone{
                 display: flex;
-                justify-content: end;
-
-            }
-                
+                justify-content: end;   
             .grid-item-suscription{
-                
                 
             }
         }
