@@ -72,6 +72,47 @@
 }
 */
 
+
+.sobremi{
+    .descripcion-sobremi{
+        .grid-container{
+            display: grid;
+            gap: 20px; 
+            grid-template-columns: 1fr 1fr;            
+            .grid-item{
+                .inside-item-container-column{
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    height:100%;
+                }
+                .inside-item-container-row{
+                    display:flex;
+                    flex-direction: row;
+                }
+                .sobremi-video-item{
+                    justify-content: flex-start;
+                }
+                .sobremi-text-header{
+                    justify-content: flex-end;
+                }
+                .sobremi-text-item{
+                    justify-content: flex-end;
+                }
+                .text-next-to-video {
+                    max-width: 50%;
+                    font-size:20px;
+                    text-align: center;
+                }
+                .sobremi-video{
+                    max-width: 40%;
+                } 
+            }
+        }  
+    }  
+}  
+
+
 .recursos {
     justify-content: center;
     img {
@@ -151,6 +192,10 @@
         display: flex;
         justify-content: center;
         padding: 2vh 2vw;
+        .container-contacto-imagen {
+            width: 90vw;
+            justify-content: center;
+        }
     }
     .contact-suscription{
         .grid-container{

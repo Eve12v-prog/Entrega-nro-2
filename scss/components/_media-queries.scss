@@ -10,7 +10,82 @@
 @media only screen and (min-width 961px) {
 
 }
+
 */
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr !important; 
+    }
+    .sobremi-video {
+        max-width:100%!important;
+    }
+    .text-next-to-video {
+        max-width:100%!important;
+    }
+    .sobremi-text-header {
+        justify-content: center!important;
+    }
+}
+
+@media (max-width: 1350px) {
+    .sobremi {
+        .grid-container {
+            grid-template-columns: 1fr !important; 
+        }
+        .sobremi-video {
+            max-width:80%!important;
+        }
+        .text-next-to-video {
+            max-width:80%!important;
+        }
+        .sobremi-text-item{
+            justify-content: center!important;
+        }
+        .sobremi-video-item{
+            justify-content: center!important;
+        }
+        .sobremi-text-header{
+            justify-content: center!important;
+        }
+    }
+}
+
+
+
+@media (max-width: 2000px) {
+    .sobremi-video {
+        max-width:60%!important;
+    }
+    .text-next-to-video {
+        max-width:60%!important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
     .grid-container {
         grid-template-columns: 1fr !important; 
@@ -49,6 +124,8 @@
     }
 }
 
+
+
 @media (max-width: 2000px) {
     .ebook-img {
         max-width:60%!important;
@@ -71,5 +148,24 @@
         display: flex;
         justify-content: center!important;
 
+    }
+}
+
+@media (max-width: 768px) { 
+    .contact{
+        padding: 0px 10px 0px 10px;
+        .img-background-contact{
+            padding: 0;
+        }
+        .contact-suscription {
+            .grid-container{
+                .grid-item-phone{
+                    .grid-item-phone-column{
+                        width: 80vw;
+                    }
+                }
+            }
+
+        }
     }
 }
